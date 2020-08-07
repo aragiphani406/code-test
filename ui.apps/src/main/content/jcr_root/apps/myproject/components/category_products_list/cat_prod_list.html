@@ -1,0 +1,18 @@
+<div data-sly-use.catProdList="com.myproject.core.models.GetCatTabsDataModel" data-sly-test="${catProdList}" data-sly-list="${catProdList.categoryIndex}" data-sly-unwrap>
+	<div id="${item.categoryIndex}">
+		<aside>
+			<img src = "${item.productImagePath}"/>
+		</aside>
+		<div>
+			<span>
+				${item.productName}
+			</span>
+			<span>
+				${item.productPrice}
+			</span>
+			<p>
+				${item.productDescription}
+			</p>	
+		</div>
+	</div>
+</div>

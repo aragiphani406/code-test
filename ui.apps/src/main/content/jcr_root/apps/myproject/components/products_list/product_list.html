@@ -1,0 +1,21 @@
+<div data-sly-use.catProdList data-sly-unwrap>
+	<aside>
+	<!-- Product Image : Apply CSS to position left-->
+		<img src = "${catProdList.value1}"/>
+	</aside>
+	<div>
+	<!-- Product Details section : Apply CSS to position right-->
+		<span>
+		<!-- Product Name -->
+			${catProdList.value2}
+		</span>
+		<span>
+		<!-- Product Price -->
+			${catProdList.value3}
+		</span>
+		<p>
+		<!-- Product Description -->
+			${catProdList.value4}
+		</p>	
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<div data-sly-use.catProdList="com.myproject.core.models.GetCatTabsDataModel" data-sly-test="${catProdList}" data-sly-unwrap>
+<!-- catProdList resource gets the list of Category objects -->
+<span> ${catProdList.title}</span>
+<div data-sly-list="${catProdList.catProductList}">
+	<div>
+		<div> ${item.categoryIndex}</div>
+		<sly data-sly-resource="${'/apps/myproject/components/product_list' @ value1='item.productIndex.productName', 
+		value2='item.productIndex.productImagePath', value4='item.productIndex.productDesc'
+		value3='item.productIndex.productPrice'}"/>
+
+	</div>
+</div>
+
+</div>
